@@ -56,6 +56,7 @@ export const Container = styled.main`
         font-weight: bold;
         border: none;
         margin: auto;
+        outline: none;
     }
 
 `
