@@ -42,6 +42,22 @@ export const Container = styled.div`
         padding: 0 10px 10px 10px;
         width: 20px;
         height: 20px;
+        
+
+    }
+
+    .remove::visited{
+        animation: 0.5s remove;
+    }
+
+
+
+
+    @keyframes remove{
+        0%{
+            width: 0;
+            height: 0;
+        }
     }
 
     

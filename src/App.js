@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Container>
       <img className="logo" src={logo}/>
-      <Routes />
+      <Routes/>
       <Nav>
 
       </Nav>

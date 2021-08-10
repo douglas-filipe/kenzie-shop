@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 import { FaShoppingCart, FaUserAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 
@@ -9,17 +9,17 @@ export const Nav = () => {
     return (
         <Container 
         >
-            <Link to="/">
+            <NavLink activeClassName="selected" exact to="/">
                 <AiFillHome/>
-            </Link>
+            </NavLink>
 
-            <Link to="/user">
+            <NavLink activeClassName="selected" exact to="/user">
                 <FaUserAlt/>
-            </Link>
+            </NavLink>
 
-            <Link to="/cart">
+            <NavLink activeClassName="selected" exact to="/cart">
                 <FaShoppingCart/>
-            </Link>
+            </NavLink>
         </Container>
     )
 }
